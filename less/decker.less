@@ -1,0 +1,38 @@
+// Decker theme
+
+// Basic slide layout
+.decker {
+  position: relative;
+  min-height: 200px;
+  background-color: #f0f;
+  z-index: 0;
+}
+
+.slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -50%;
+  top: -50%;
+
+  &.current {
+    opacity: 1;
+  }
+
+  &.prev {
+    opacity: 0;
+  }
+
+  &.next {
+    opacity: 0;
+  }
+}
